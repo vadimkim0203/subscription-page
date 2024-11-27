@@ -6,26 +6,26 @@ import stateImg from './assets/state-mgmt.png';
 export const CORE_CONCEPTS = [
   {
     image: componentsImg,
-    title: 'Components',
+    title: 'Economy',
     description:
-      'The core UI building block - compose the user interface by combining multiple components.',
+      '2GB of high-speed data, followed by unlimited data at a reduced speed of 512 Kbps.',
   },
   {
     image: jsxImg,
-    title: 'JSX',
+    title: 'Economy Plus',
     description:
-      'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
+      '5GB of high-speed data, followed by unlimited data at a reduced speed of 512 Kbps.',
   },
   {
     image: propsImg,
-    title: 'Props',
+    title: 'Standart',
     description:
-      'Make components configurable (and therefore reusable) by passing input data to them.',
+      '5GB of high-speed data, followed by unlimited data at a reduced speed of 5 Mbps.',
   },
   {
     image: stateImg,
-    title: 'State',
+    title: 'Premium',
     description:
-      'React-managed data which, when changed, causes the component to re-render & the UI to update.',
+      '10GB of high-speed data, followed by unlimited data at a reduced speed of 5 Mbps.',
   },
 ];
