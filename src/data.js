@@ -1,31 +1,58 @@
-import componentsImg from './assets/components.png';
-import propsImg from './assets/config.png';
-import jsxImg from './assets/jsx-ui.png';
-import stateImg from './assets/state-mgmt.png';
+import componentsImg from "./assets/components.png";
+import propsImg from "./assets/config.png";
+import jsxImg from "./assets/jsx-ui.png";
+import stateImg from "./assets/state-mgmt.png";
 
 export const CORE_CONCEPTS = [
   {
     image: componentsImg,
-    title: 'Economy',
+    title: "Components",
     description:
-      '2GB of high-speed data, followed by unlimited data at a reduced speed of 512 Kbps.',
+      "The core UI building block - compose the user interface by combining multiple components.",
   },
   {
     image: jsxImg,
-    title: 'Economy Plus',
+    title: "JSX",
     description:
-      '5GB of high-speed data, followed by unlimited data at a reduced speed of 512 Kbps.',
+      "Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.",
   },
   {
     image: propsImg,
-    title: 'Standart',
+    title: "Props",
     description:
-      '5GB of high-speed data, followed by unlimited data at a reduced speed of 5 Mbps.',
+      "Make components configurable (and therefore reusable) by passing input data to them.",
   },
   {
     image: stateImg,
-    title: 'Premium',
+    title: "State",
     description:
-      '10GB of high-speed data, followed by unlimited data at a reduced speed of 5 Mbps.',
+      "React-managed data which, when changed, causes the component to re-render & the UI to update.",
   },
 ];
+
+export const EXAMPLES = {
+  economy: {
+    title: "Economy",
+    description: "Information about the economy plan.",
+    code: `
+Here goes the price`,
+  },
+  economyPlus: {
+    title: "Economy Plus",
+    description: "Information about the Economy Plus plan",
+    code: `
+Here goes the price`,
+  },
+  standart: {
+    title: "Standart",
+    description: "Information about the Standart plan.",
+    code: `
+Here goes the price`,
+  },
+  premium: {
+    title: "Premium",
+    description: "Information about the Premium plan.",
+    code: `
+Here goes the price`,
+  },
+};
