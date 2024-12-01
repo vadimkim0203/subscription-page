@@ -27,28 +27,28 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton
+            <TabButton isSeleted={selectedTopic === "economy"}
               onSelect={() => {
                 handleSelect("economy");
               }}
             >
               Economy
             </TabButton>
-            <TabButton
+            <TabButton isSeleted={selectedTopic === "economyPlus"}
               onSelect={() => {
                 handleSelect("economyPlus");
               }}
             >
               Economy Plus
             </TabButton>
-            <TabButton
+            <TabButton isSeleted={selectedTopic === "standart"}
               onSelect={() => {
                 handleSelect("standart");
               }}
             >
               Standart
             </TabButton>
-            <TabButton
+            <TabButton isSeleted={selectedTopic === "premium"}
               onSelect={() => {
                 handleSelect("premium");
               }}
