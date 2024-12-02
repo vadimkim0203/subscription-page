@@ -18,7 +18,7 @@ function App() {
         <section id="core-concepts">
           <h2>Our plans</h2>
           <ul>
-            {CORE_CONCEPTS.map((blockName) => (<CoreConcept key={blockName.title} {...blockName}/>))}
+            {CORE_CONCEPTS.map((blockName) => (<CoreConcept key={blockName.description} {...blockName}/>))}
           </ul>
         </section>
         <section id="examples">
@@ -53,7 +53,7 @@ function App() {
               Premium
             </TabButton>
           </menu>
-          {!selectedTopic && <p>Please choose your plan</p>}
+          {!selectedTopic && <p id="choose-plan">Please choose your plan</p>}
 
           {selectedTopic && (
             <div id="tab-content">
