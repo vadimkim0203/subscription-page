@@ -16,7 +16,7 @@ header h1 {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 5rem;
-  background: linear-gradient(40deg, #787878, #575757, #575757, #cde6f5);
+  background: linear-gradient(40deg, #787878, #575757, #575757, #787878);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));

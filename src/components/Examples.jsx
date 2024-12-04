@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TabButton from "./TabButton";
 import { EXAMPLES } from "../data";
+import Tabs from "./Tabs.jsx";
 
 export default function Examples() {
   let [selectedTopic, setSelectedTopic] = useState();
@@ -9,42 +10,52 @@ export default function Examples() {
     setSelectedTopic(selectedButton);
     // console.log(selectedTopic);
   }
+
+  let tabContent;
+
   return (
     <section title="Examples" id="examples">
-      <menu>
-        <TabButton
-          isSeleted={selectedTopic === "economy"}
-          onClick={() => {
-            handleSelect("economy");
-          }}
-        >
-          Economy
-        </TabButton>
-        <TabButton
-          isSeleted={selectedTopic === "economyPlus"}
-          onClick={() => {
-            handleSelect("economyPlus");
-          }}
-        >
-          Economy Plus
-        </TabButton>
-        <TabButton
-          isSeleted={selectedTopic === "standart"}
-          onClick={() => {
-            handleSelect("standart");
-          }}
-        >
-          Standart
-        </TabButton>
-        <TabButton
-          isSeleted={selectedTopic === "premium"}
-          onClick={() => {
-            handleSelect("premium");
-          }}
-        >
-          Premium
-        </TabButton>
-      </menu>
+      <Tabs
+        buttons={
+          <>
+            <TabButton
+              isSelected={selectedTopic === "economy"}
+              onClick={() => {
+                handleSelect("economy");
+              }}
+            >
+              Economy
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === "economyPlus"}
+              onClick={() => {
+                handleSelect("economyPlus");
+              }}
+            >
+              Economy Plus
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === "standart"}
+              onClick={() => {
+                handleSelect("standart");
+              }}
+            >
+              Standart
+            </TabButton>
+            <TabButton
+              isSelected={selectedTopic === "premium"}
+              onClick={() => {
+                handleSelect("premium");
+              }}
+            >
+              Premium
+            </TabButton>
+          </>
+        }
+      >
+        {tabContent}
+      </Tabs>
+
       {!selectedTopic && <p id="choose-plan">Please choose your plan</p>}
 
       {selectedTopic && (
