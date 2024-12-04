@@ -10,12 +10,11 @@ export default function Examples() {
     // console.log(selectedTopic);
   }
   return (
-    <section id="examples">
-      <h2>Examples</h2>
+    <section title="Examples" id="examples">
       <menu>
         <TabButton
           isSeleted={selectedTopic === "economy"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("economy");
           }}
         >
@@ -23,7 +22,7 @@ export default function Examples() {
         </TabButton>
         <TabButton
           isSeleted={selectedTopic === "economyPlus"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("economyPlus");
           }}
         >
@@ -31,7 +30,7 @@ export default function Examples() {
         </TabButton>
         <TabButton
           isSeleted={selectedTopic === "standart"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("standart");
           }}
         >
@@ -39,7 +38,7 @@ export default function Examples() {
         </TabButton>
         <TabButton
           isSeleted={selectedTopic === "premium"}
-          onSelect={() => {
+          onClick={() => {
             handleSelect("premium");
           }}
         >
