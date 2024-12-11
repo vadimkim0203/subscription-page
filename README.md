@@ -26,7 +26,26 @@ Tech Stack
 
 Installation
 <h5>Clone the repository</h5>
+  <ul>
+    <li>git clone https://github.com/vadimkim0203/subscription-page.git</li>
+    <li>cd subscription-page</li>
+  </ul>
+
+<h5>Install dependencies</h5>
+  <ul>
+    <li>npm install or npm i</li>
+  </ul>
+
+<h5>Run the development server</h5>
 <ul>
-  <li>git clone https://github.com/vadimkim0203/subscription-page.git</li>
-  <li>cd subscription-page</li>
+  <li>npm run dev</li>
 </ul>
+
+<h5>Open your browser and visit http://localhost:5173</h5>
+
+<br/>
+
+<h2>Usage</h2>
+
+<h3>The website provides users with detailed information about data plans upon ariving to Korea. Interactive and resposive buttons and components ensure a seamless experience.</h3>
+
